@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<!-- We use now METHOD="POST",
+	but we need to change our code
+	in the views.py too (POST method)
+-->
+<form method="POST" action="add">
+	
+	<!-- in settings we can see under MIDDLEWARE
+	the csrf one, this is used to prevent
+	this type of attack, so we use a token, otherwise it will
+	prompt a CSRF (Cross Site Request Forgery) error
+	-->
+	{% csrf_token %}
+
+	Num A: <input type="text" name="numa"><br>
+	Num B: <input type="text" name="numb"><br>
+	<input type="submit">
+</form>
+
+{%endblock%}

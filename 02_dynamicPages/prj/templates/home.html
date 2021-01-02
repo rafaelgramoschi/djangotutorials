@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+	{% block content %}
+
+		<p>Hello {{name}}! This name is stored in a variable passed to the page!</p>
+		<p>I have a cyan background color, because my base page has it!</p>
+
+		<p style="background-color: white;"><br>
+		Create url paths<br><br>
+		Create folder <b>templates</b> in root folder<br><br>
+		Modify settings.py <b>'DIRS':[os.path.join(BASE_DIR, 'templates')]</b><br><br>
+		Create <b>home.html</b>, <b>base.html</b>; use jinja tags<br><br>
+		Code views.py, render dynamic page by your name<br><br>
+		</p>
+
+	{% endblock %}
+
+<!--
+STATIC PAGE
+<p>Hello World!</p>
+
+
+DYNAMIC PAGE
+<p>Hello {{name}}!</p>
+{ {  } }  is used for dynamic data, code... in use with django
+this page have the bgcolor cyan, from its base page
+
+plus we add this specific content inside the base page's
+content block
+-->

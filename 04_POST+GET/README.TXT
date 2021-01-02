@@ -1,0 +1,5 @@
+Request Methods
+
+GET		PUT			HEAD		OPTION		PATCH
+POST	DELETE		CONNECT		TRACE
+

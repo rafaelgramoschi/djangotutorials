@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h5>Sum 2 numbers:</h5>
+
+<form action="add"><!-- we map "add" in the urls-->
+	Number A: <input type="text" name="numa"><br>
+	Number B: <input type="text" name="numb"><br>
+	<input type="submit">
+</form>
+
+{% endblock %}
